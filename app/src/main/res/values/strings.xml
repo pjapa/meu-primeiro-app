@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">meu primeiro app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_e_mail">E-mail</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_sexo">Sexo</string>
+    <string name="hint_celular">Celular</string>
+    <string name="hint_dia">Dia</string>
+    <string name="hint_m_s">Mês</string>
+    <string name="hint_ano">Ano</string>
+    <string name="hint_salvar">salvar</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.meuprimeiroapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_formularioFragment"
+            app:destination="@id/formularioFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_homeFragment_to_fragment_Adote"
+            app:destination="@id/fragment_Adote" />
+        <action
+            android:id="@+id/action_homeFragment_to_petshopFragment"
+            app:destination="@id/fragmentPetshop" />
+        <action
+            android:id="@+id/action_homeFragment_to_veterinarioFragment"
+            app:destination="@id/veterinarioFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/formularioFragment"
+        android:name="com.example.meuprimeiroapp.FormularioFragment"
+        android:label="fragment_formulario"
+        tools:layout="@layout/fragment_formulario" >
+        <action
+            android:id="@+id/action_formularioFragment_to_login_cadastroFragment"
+            app:destination="@id/login_cadastroFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/login_cadastroFragment"
+        android:name="com.example.meuprimeiroapp.Login_cadastroFragment"
+        android:label="fragment_login_cadastro"
+        tools:layout="@layout/fragment_login_cadastro" />
+    <action
+        android:id="@+id/action_formularioFragment_to_lin_fragment_login_cadastro"
+        app:destination="@+id/etLogin"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"/>
+
+    <fragment
+        android:id="@+id/fragment_Adote"
+        android:name="com.example.meuprimeiroapp.fragment_Adote"
+        android:label="fragment_adote"
+        tools:layout="@layout/fragment_adote" >
+        <action
+            android:id="@+id/action_fragment_Adote_to_cachorroFragment"
+            app:destination="@id/cachorroFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_homeFragment_to_fragment_Adote"
+        app:destination="@+id/fragment_Adote" />
+    <fragment
+        android:id="@+id/fragmentPetshop"
+        android:name="com.example.meuprimeiroapp.PetshopFragment"
+        android:label="fragment_petshop"
+        tools:layout="@layout/fragment_petshop" />
+    <action
+        android:id="@+id/action_homeFragment_to_petshopFragment"
+        app:destination="@id/fragmentPetshop" />
+    <fragment
+        android:id="@+id/veterinarioFragment"
+        android:name="com.example.meuprimeiroapp.PetshopFragment"
+        android:label="fragment_veterinario"
+        tools:layout="@layout/fragment_veterinario" />
+    <action
+        android:id="@+id/action_homeFragment_to_veterinarioFragment"
+        app:destination="@id/veterinarioFragment" />
+    <fragment
+        android:id="@+id/cachorroFragment"
+        android:name="com.example.meuprimeiroapp.adapter.CachorroFragment"
+        android:label="fragment_cachorro"
+        tools:layout="@layout/fragment_cachorro" />
+    <action
+        android:id="@+id/action_fragment_Adote_to_cachorroFragment"
+        app:destination="@+id/cachorroFragment"/>
+
+</navigation>
+
+
